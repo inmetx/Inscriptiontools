@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVM Inscription Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="author_image.png">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.6.0/dist/web3.min.js"></script>
+</head>
+
+<body>
+    <div id="sidebar">
+        <div id="author-info">
+            <p>作者推特 <a href="https://twitter.com/0xM2C" target="_blank">@0xM2C</a></p>
+            <img src="author_image.png">
+        </div>
+        <p>温馨提示：</p>
+        <ol>
+            <li>兼容EVM链皆可使用</li>
+            <li>RPC节点可至 <a href="https://chainlist.org/" target="_blank">https://chainlist.org/</a> 寻找</li>
+            <li>本程序已开源且勿乱用及销售</li>
+        </ol>
+    </div>
+    <div id="app-container">
+        <h1>EVM Inscription Tool</h1>
+
+        <label for="rpc-input">RPC地址：</label>
+        <input type="text" id="rpc-input" class="custom-input" />
+
+        <label for="private-key-input">私钥（必填，每行一个）：</label>
+        <textarea id="private-key-input" class="custom-input" rows="5"></textarea>
+
+        <label for="nums-input">交易数量：</label>
+        <input type="number" id="nums-input" class="custom-input" style="width: calc(55% - 160px);" required>
+
+        <label for="pause-input" style="margin-left: 12px">暂停秒数：</label>
+        <input type="number" id="pause-input" class="custom-input" value="0.5" step="0.1"
+            style="width: calc(55% - 160px);" required>
+
+        <br>
+
+        <label for="data-input">铭文（必填，原始铭文，不是转码后的十六进制)：</label>
+        <input type="text" id="data-input" class="custom-input" />
+
+        <h2>执行结果：</h2>
+        <textarea id="result-text" rows="8" readonly></textarea>
+
+        <button id="execute-button">执行交易</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
