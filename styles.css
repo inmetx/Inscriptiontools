@@ -102,3 +102,22 @@ button:hover {
     border-radius: 50%;
     overflow: hidden;
 }
+
+#cancel-button {
+    padding: 10px;
+    background-color: #c13434;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#cancel-button:disabled {
+    background-color: #4d4a4a;
+    cursor: not-allowed;
+}
+
+#cancel-button:hover:enabled {
+    background-color: #c13434;
+}
