@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     executeButton.addEventListener("click", function () {
         // Disable the button and update appearance
         executeButton.disabled = true;
-        executeButton.innerText = "交易進行中";
+        executeButton.innerText = "正在交易";
         executeButton.style.backgroundColor = "#ccc";
 
         scheduleTransaction(pauseInput.value); // 传递秒数给 scheduleTransaction
