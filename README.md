@@ -1,4 +1,4 @@
-# Inscription_Tools操作简单的铭文铸造工具，支持所有EVM兼容链
+# Inscription_Tools 是一款易于使用的铭文铸造工具，支持所有与 EVM 兼容的链
 
 ## 使用技巧
 
