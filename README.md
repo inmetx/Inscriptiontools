@@ -1,7 +1,6 @@
-# Evm_Inscription_Tool
-實現鏈上多帳號自動化發送交易的工具
+# Inscription_Tools操作简单的铭文铸造工具，支持所有EVM兼容链
 
-## 輸入
+## 使用技巧
 
 1. RPC地址：可由 [Chainlist](https://chainlist.org/) 獲取，或使用 [Alchemy](https://dashboard.alchemy.com/) 私人節點（速度較快）。詳細使用方法請自行搜尋。
 2. 私鑰：一行一個私鑰，請勿存放過多資產於錢包內
